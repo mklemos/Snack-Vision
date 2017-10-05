@@ -1,0 +1,16 @@
+Bill Crossman
+Jack Kinne
+Sam Alston
+
+
+
+sprint one:
+learn more meteor
+user name/password to login
+display pins that exist, drop pins
+display a map
+GSM push notifications
+assigned roles
+updated trello board with all information
+
+set daily scrum time: 2pm, information saved in Slack.
