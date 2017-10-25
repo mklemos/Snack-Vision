@@ -1,0 +1,12 @@
+Max Lemos
+Jack Kinne 
+Sam Alston
+Billy Crossman
+
+10/25/17
+
+Determined core concept is mobile app
+
+researching server side elements for android.
+
+messed with xml displays and android emulators. 
