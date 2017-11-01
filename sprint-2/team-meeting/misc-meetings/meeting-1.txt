@@ -1,0 +1,11 @@
+Jack Kinne
+Billy Crossman
+Max Lemos
+
+Date: 11-1-2017 9:00
+
+installing Django, pip, documentation, discussed priorities and minimum requirements.  
+
+
+
+Next meeting: 11-3-2017 11:00
