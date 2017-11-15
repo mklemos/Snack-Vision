@@ -1,0 +1,39 @@
+Max Lemos
+Jack Kinne
+
+November 12, 2017
+
+Django framework environment setup.  REST API setup.  so many horrors were made.  Please follow the below documentation:
+
+
+
+"fix:
+Add path variables for Python folder (includes setup.py)
+    AND add subfolder Python/scripts as separate path variable
+
+    - for python commands
+    - for pip commands
+guide:
+https://www.codingforentrepreneurs.com/blog/install-python-django-on-windows/
+
+steps after:
+open a windows powershell
+
+> cd ~\Dev\cfehome # or your virtualenv's path
+> .\Scripts\activate
+(cfehome) > deactivate
+> .\Scripts\activate
+(cfehome) >
+
+//so theorehetically, you won't need to do this again, but just in case:
+
+
+
+
+(cfehome) > pip install django==1.11.5
+
+
+
+
+
+"
