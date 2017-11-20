@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
+from backend.snack_vision.models import new_Node
 from rest_framework import viewsets
-from backend.snack_vision.serializers import UserSerializer, GroupSerializer
+from backend.snack_vision.serializers import UserSerializer, GroupSerializer, new_NodeSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -18,3 +19,10 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+class new_NodeViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows nodes to be viewed or edited.
+    """
+    queryset = new_Node.objects.all()
+    serializer_class = new_NodeSerializer
