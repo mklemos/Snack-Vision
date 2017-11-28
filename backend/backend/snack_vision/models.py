@@ -6,7 +6,7 @@ class new_Node(models.Model):
         '''
         new_Node model
         '''
-        name = models.CharField(max_length=30)
+        name = models.CharField(max_length=40)
         loc_long = models.DecimalField(max_digits=9, decimal_places=6)
         loc_lat = models.DecimalField(max_digits=9, decimal_places=6)
         node_type = models.CharField(max_length=30)
