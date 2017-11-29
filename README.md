@@ -15,6 +15,7 @@ Guide for use: internal directions only.
 4. python 3 
   - install pip with setup, install for all users.
 5. virtualENV
+  - guide here: https://www.codingforentrepreneurs.com/blog/install-python-django-on-windows/
 6. REST framework (dependency in Django)
 7. google cloud platform.
   - install google cloud SDK (with sudo)
