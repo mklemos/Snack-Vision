@@ -1,8 +1,8 @@
 Bill Crossman
 Jack Kinne
 Sam Alston
-10.6.17
 
+10.6.17
 
 sprint one:
 learn more meteor
@@ -13,4 +13,10 @@ GSM push notifications
 assigned roles
 updated trello board with all information
 
-set daily scrum time: 2pm, information saved in Slack.
+set weekly scrum time: 2pm wednesday, information saved in Slack.
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
