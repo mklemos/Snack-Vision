@@ -1,0 +1,14 @@
+Max Lemos
+Jack Kinne
+Sam Alston
+
+November 29, 2017
+
+Preparing for our final presentation.  Organizing files, cleaning repository, working on the backend library of "volley" to connect our server to our client.  organizing our coding standards formally.
+
+Next team meeting chosen for friday at noon, 12/1/17.
+
+"The information in this report is accurate, to the best of my knowledge"
+Max Lemos
+Jack Kinne
+Sam Alston
