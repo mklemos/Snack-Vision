@@ -25,3 +25,4 @@ Guide for use: internal directions only.
 
 
 NOTE: on project handout page 10.  continue from this point.
+milestone 2 - sprint 1
