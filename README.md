@@ -17,5 +17,5 @@ Guide for use: internal directions only.
 5. virtualENV
 6. REST framework (dependency in Django)
 7. google cloud platform.
-  - install google cloud SDK
+  - install google cloud SDK (with sudo)
 8. website DNS
