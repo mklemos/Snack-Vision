@@ -20,3 +20,8 @@ Guide for use: internal directions only.
 7. google cloud platform.
   - install google cloud SDK (with sudo)
 8. website DNS
+
+
+
+
+NOTE: on project handout page 10.  continue from this point.
