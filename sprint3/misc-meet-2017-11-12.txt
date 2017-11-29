@@ -5,8 +5,6 @@ November 12, 2017
 
 Django framework environment setup.  REST API setup.  so many horrors were made.  Please follow the below documentation:
 
-
-
 "fix:
 Add path variables for Python folder (includes setup.py)
     AND add subfolder Python/scripts as separate path variable
@@ -26,14 +24,12 @@ open a windows powershell
 (cfehome) >
 
 //so theorehetically, you won't need to do this again, but just in case:
-
-
-
-
 (cfehome) > pip install django==1.11.5
-
-
-
-
-
 "
+
+next meeting is on 11.15.17
+
+
+"The information in this report is accurate, to the best of my knowledge"
+Max Lemos
+Jack Kinne
