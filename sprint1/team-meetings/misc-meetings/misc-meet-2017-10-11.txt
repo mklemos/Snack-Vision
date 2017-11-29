@@ -13,5 +13,11 @@ talked about version control for android (choose 4.1)
 
 broke into pair programming.
 
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos
 
 

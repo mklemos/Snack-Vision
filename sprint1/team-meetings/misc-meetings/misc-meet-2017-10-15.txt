@@ -9,3 +9,7 @@ pair programming on javascript; hunting bugs and getting objects to display as p
 Success!
 
 
+"The information in this report is accurate, to the best of my knowledge"
+
+Jack Kinne
+Sam Alston

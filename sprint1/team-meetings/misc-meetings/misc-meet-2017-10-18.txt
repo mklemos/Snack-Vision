@@ -16,6 +16,10 @@ sam - working on porting maps with pins to meteor
 jack - firebase integration into android studio
 
 
+"The information in this report is accurate, to the best of my knowledge"
 
-
+Sam Alston
+Billy Crossman
+Jack Kinne
+Max Lemos
 
