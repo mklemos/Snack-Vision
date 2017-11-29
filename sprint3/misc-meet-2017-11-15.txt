@@ -9,3 +9,9 @@ This meeting consisted of a planning period for the next meeting, and syncing ou
 Sam and Billy now have Django on their computers and all members have local repos up to date with current working project.
 
 There was also a short review of the previous lesson in SE for Crossman covering MMM chapters and live variables.
+
+"The information in this report is accurate, to the best of my knowledge"
+Max Lemos
+Jack Kinne
+Billy Crossman
+Sam Alston
