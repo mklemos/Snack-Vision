@@ -1,0 +1,15 @@
+testing plan:
+for this sprint, our goal is to have working code within the android studio developer that can SHOW a pin, and load/compile correctly.
+
+
+unit testing:
+
+condition: successful compile
+condition: calling FUNCTION_NAME_TEST returns true.
+
+
+
+acceptance testing:
+
+condition: map loads on startup.
+condition: click on the map creates a pin.
