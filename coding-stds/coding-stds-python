@@ -1,0 +1,46 @@
+Indentation, line-length & code wrapping
+    Always use 4 spaces for indentation (don’t use tabs)
+    Write in ASCII in Python 2 and UTF-8 in Python 3
+    Max line-length: 72 characters (especially in comments)
+    Always indent wrapped code for readablility
+    
+Imports
+    Don’t use wildcards
+    Try to use absolute imports over relative ones
+    When using relative imports, be explicit (with .)
+    Don’t import multiple packages per line
+
+Whitespace and newlines
+    2 blank lines before top-level function and class definitions
+    1 blank line before class method definitions
+    Use blank lines in functions sparingly  
+    Avoid extraneous whitespace
+    Don’t use whitespace to line up assignment operators (=, :)
+    Spaces around = for assignment
+    No spaces around = for default parameter values
+    Spaces around mathematical operators, but group them sensibly
+    Multiple statements on the same line are discouraged
+    
+Comments
+    Keep comments up to date - incorrect comments are worse than no comments
+    Write in whole sentences
+    Try to write in “Strunk & White” English
+    Use inline comments sparingly & avoid obvious comments
+    Each line of block comments should start with “# “
+    Paragraphs in block comments should be separated by a line with a single “#”
+    All public functions, classes and methods should have docstrings
+    Docstrings should start and end with """
+    Docstring one-liners can be all on the same line
+    In docstrings, list each argument on a separate line
+    Docstrings should have a blank line before the final """
+    
+Naming conventions
+    Class names in CapWords
+    Method, function and variables names in lowercase_with_underscores
+    Private methods and properties start with __double_underscore
+    “Protected” methods and properties start with _single_underscore
+    If you need to use a reserved word, add a _ to the end (e.g. class_)
+    Always use self for the first argument to instance methods
+    Always use cls for the first argument to class methods
+    Never declare functions using lambda (f = lambda x: 2*x)
+

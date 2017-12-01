@@ -1,0 +1,15 @@
+Jack Kinne
+Sam Alston
+
+
+10/15/17
+Meeting two, sprint one.
+
+pair programming on javascript; hunting bugs and getting objects to display as pins. 
+Success!
+
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Jack Kinne
+Sam Alston
