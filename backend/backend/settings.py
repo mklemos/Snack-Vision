@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1%s2p2n2+r_)ypu0f-@_wmhqx7$l%e5sybt+h$()eu6lk+6)w!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['black-cakl.appspot.com',
                  '127.0.0.1']
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'backend.snack_vision',
+    'backend.snack_vision'
 ]
 
 REST_FRAMEWORK = {
@@ -127,9 +127,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
+#STATIC_URL = '/static/'
+# STATIC_URL = '/Users/Max/Fierce-Beta/backend/static'
+#STATICFILES_DIRS = ("path/to/static")
 
-STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
+#STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'static'))
+#
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'staticfiles')
+# )
+
+# BASE_DIR = '/Users/Max/Fierce-Beta/backend'
+
+STATIC_ROOT = '/backend/backend/static'
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'staticfiles'),
+    os.path.join(BASE_DIR, 'static'),
 )
