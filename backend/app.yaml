@@ -3,7 +3,11 @@ env: flex
 runtime: python
 
 # [START django_app]
+<<<<<<< HEAD
 #runtime: python27
+=======
+#runtime: python27
+>>>>>>> ecd5b4e43ee13f45517cbd1c5aa2777b5ec99817
 api_version: 1
 threadsafe: yes
 
