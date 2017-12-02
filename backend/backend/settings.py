@@ -25,7 +25,8 @@ SECRET_KEY = '1%s2p2n2+r_)ypu0f-@_wmhqx7$l%e5sybt+h$()eu6lk+6)w!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['black-cakl.appspot.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -130,5 +131,5 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
