@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1%s2p2n2+r_)ypu0f-@_wmhqx7$l%e5sybt+h$()eu6lk+6)w!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['black-cakl.appspot.com',
                  '127.0.0.1']
