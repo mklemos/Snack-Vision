@@ -28,11 +28,15 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 
+
+
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'new_node', views.new_NodeViewSet)
 
+# Max and Sam
+# These url paterns are what
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [

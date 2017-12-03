@@ -1,0 +1,15 @@
+Max Lemos
+Jack Kinne
+Sam Alston
+Billy Crossman
+
+Decemeber 02, 2017
+
+Modified volley project for frontend android. testing writing in django. Preparing for our final presentation.  Organizing files and cleaned repository.
+Next team meeting chosen for Sunday, 12/03/17.
+
+"The information in this report is accurate, to the best of my knowledge"
+Max Lemos
+Jack Kinne
+Sam Alston
+Billy Crossman

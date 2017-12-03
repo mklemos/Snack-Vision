@@ -2,6 +2,10 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 
+# Max Lemos and Billy Crossman
+# This model helps define the tables in our SQL DB
+# new_Node is the model for a an item that will be placed on the map.
+
 class new_Node(models.Model):
         '''
         new_Node model
