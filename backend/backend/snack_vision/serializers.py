@@ -6,7 +6,7 @@ from rest_framework import serializers
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'groups', 'is_student', 'token_push', 'token_id', 'push_yes')
+        fields = ('url', 'username', 'email', 'groups') #, 'is_student', 'token_push', 'token_id', 'push_yes'
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
