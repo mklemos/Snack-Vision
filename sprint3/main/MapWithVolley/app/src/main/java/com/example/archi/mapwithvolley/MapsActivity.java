@@ -1,6 +1,14 @@
-package com.example.archi.mapwithvolley;
+/************************
+Authors: Sam Alston, Max Lemos, Billy Crossman, Jack Kinne
 
-import android.content.Context;
+This Application launches a google map activity centered over Arcata, CA.
+ The map loads markers from a Django RESTful framework and populates the map with them.
+ Users may add markers with a long press on the desired location. If 'good response' comes back,
+   the marker was added to the DB and will be loaded by other devices.
+
+ ************************/
+package black_cakl.snackvision;
+
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Base64;
@@ -10,7 +18,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -18,7 +25,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
+
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -32,12 +39,15 @@ import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_ORANGE;
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_ROSE;
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_VIOLET;
+import static com.google.android.gms.maps.model.BitmapDescriptorFactory.HUE_YELLOW;
 
 public class MapsActivity extends FragmentActivity implements OnMapLongClickListener, OnMapReadyCallback {
 
@@ -46,8 +56,12 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
     private LatLng placementPoint;
     private float markerColor;
     private String markerType="default";
+    private float greenMarker = 120;
+    private float purpleColor = 300;
+    private float yellowColor = 45;
 
 
+    //call open context_menu to place a marker
     @Override
     public void onMapLongClick(LatLng point) {
         placementPoint=point;
@@ -59,10 +73,8 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
     public void shootVolley(){
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-
-        //String url = "http://black-cakl.appspot.com/new_node/?format=json";
-
         String url = "http://10.0.2.2:8000/marker/?format=json";
+
         JsonArrayRequest jsObjRequest = new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 
@@ -95,15 +107,11 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
                 return headers;
             }
         };
-
         queue.add(jsObjRequest);
     }
 
-
-
     public void postVolley() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        //String url = "http://black-cakl.appspot.com/new_node/";
         String url = "http://10.0.2.2:8000/marker/?format=json";
 
         StringRequest putRequest = new StringRequest(Request.Method.POST, url,
@@ -127,7 +135,6 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
                     }
                 }
         ) {
-
             @Override
             protected Map<String, String> getParams()
             {
@@ -145,8 +152,6 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
                 String credentials = "admin:password123";
                 String auth = "Basic "
                         + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
-                //not passing JSON data, so ignore this line.
-                //headers.put("Content-Type", "application/json");
                 headers.put("Authorization", auth);
                 return headers;
             }
@@ -154,13 +159,13 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
         queue.add(putRequest);
     }
 
-
     //parse the jsonarry in a loop until each marker has been added to the map, set the camera to the last marker added
     //called in shootvolley()
     public void addMarkers(JSONArray jsonArray) {
         try{
             JSONObject jsonMarker;
-            LatLng markerLatLon = new LatLng(40, -120);
+            //default location if nothing loads
+            LatLng markerLatLon = new LatLng(40.87048381794272d,-124.07710678875445d);
 
             for(int i=0; i < jsonArray.length(); i++){
                 jsonMarker = jsonArray.getJSONObject(i);
@@ -168,22 +173,24 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
                 String markerName = jsonMarker.getString("type");
                 double lat = Double.parseDouble(jsonMarker.getString("lat"));
                 double lon = Double.parseDouble(jsonMarker.getString("lon"));
+                //make more complex datatypes out of primitives for marker options
+                markerLatLon = new LatLng(lon, lat);
+                markerColor = markerColorSelector(markerName);
 
-                markerLatLon = new LatLng(lat, lon);
-                mMap.addMarker(new MarkerOptions().position(markerLatLon).title(markerName));
+                MarkerOptions markerOps = new MarkerOptions()
+                        .icon(BitmapDescriptorFactory.defaultMarker(markerColor))
+                        .position(
+                                new LatLng(markerLatLon.latitude, markerLatLon.longitude)).title(markerName);
+                mMap.addMarker(markerOps);
             }
 
-            markerLatLon = new LatLng(40.866516d, -124.082840d);
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(markerLatLon));
-            mMap.animateCamera( CameraUpdateFactory.zoomTo(12));
+
         } catch (Exception error ) {
             Toast.makeText(MapsActivity.this,"Trouble grabbing JSON data in addMarkers: "+error.toString(),Toast.LENGTH_LONG).show();
         }
-
     }
 
-
-
+    //register the map for context_menu
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -198,6 +205,7 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
         registerForContextMenu(r1);
     }
 
+    //method called on longPress to create context_menu
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu,v,menuInfo);
@@ -208,6 +216,41 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
         mi.inflate(R.menu.context_menu,menu);
     }
 
+    //Takes marker type string and returns associated float value for appropriate color
+    //Called when markers are being placed
+    public float markerColorSelector(String markerType) {
+        float returnColor=360;
+        switch(markerType){
+            case "Apple Tree": {
+                returnColor = greenMarker;
+            }
+            break;
+            case "Blackberry Bush": {
+                returnColor = HUE_VIOLET;
+            }
+            break;
+            case "Garden": {
+                returnColor = yellowColor;
+            }
+            break;
+            case "Citrus Tree": {
+                returnColor = HUE_ORANGE;
+            }
+            break;
+            case "Lemon Tree": {
+                returnColor = HUE_YELLOW;
+            }
+            break;
+            case "Peach Tree": {
+                returnColor = HUE_ROSE;
+            }
+        }
+        return returnColor;
+    }
+
+    //This function will be called once user selects an item from context_menu
+    //places marker on the map at selected location
+    //calls putVolley to add marker to DB
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
@@ -216,19 +259,37 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
             case R.id.item1:{
                 Toast.makeText(MapsActivity.this,"Apple tree placed",Toast.LENGTH_LONG).show();
                 markerType="Apple Tree";
-                markerColor= 120;
+                markerColor= markerColorSelector(markerType);
             }
             break;
             case R.id.item2:{
                 Toast.makeText(MapsActivity.this,"Blackberry bush placed",Toast.LENGTH_LONG).show();
                 markerType="Blackberry Bush";
-                markerColor=300;
+                markerColor=HUE_VIOLET;
             }
             break;
             case R.id.item3:{
                 Toast.makeText(MapsActivity.this,"Garden placed",Toast.LENGTH_LONG).show();
                 markerType="Garden";
-                markerColor=45;
+                markerColor=yellowColor;
+            }
+            break;
+            case R.id.item4:{
+                Toast.makeText(MapsActivity.this,"Citrus Tree placed",Toast.LENGTH_LONG).show();
+                markerType="Citrus Tree";
+                markerColor= HUE_ORANGE;
+            }
+            break;
+            case R.id.item5:{
+                Toast.makeText(MapsActivity.this,"Peach Tree placed",Toast.LENGTH_LONG).show();
+                markerType="Peach Tree";
+                markerColor= HUE_ROSE;
+            }
+            break;
+            case R.id.item6:{
+                Toast.makeText(MapsActivity.this,"Lemon Tree placed",Toast.LENGTH_LONG).show();
+                markerType="Lemon Tree";
+                markerColor= HUE_YELLOW;
             }
         }
 
@@ -241,9 +302,6 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
 
         return true;
     }
-
-
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -257,6 +315,12 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setOnMapLongClickListener(this);
+
+        //create LatLng to center over Arcata
+        LatLng markerLatLon = new LatLng(40.87048381794272d,-124.07710678875445d);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(markerLatLon));
+        mMap.animateCamera( CameraUpdateFactory.zoomTo(15));
+
         //call shootVolley to load markers from DB
         shootVolley();
     }
