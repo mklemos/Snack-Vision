@@ -1,0 +1,20 @@
+unit testing:
+
+result: can post and get data from googles server.
+result: Can read JSON object data.
+result: UI menu has three buttons that trigger methods.
+
+
+acceptance testing:
+
+result: Nodes are saved on our map and reformed and startup.
+result: Nodes are saved on the server and can be posted to a user.
+result: menu is fully navigatable without unexpected behavior.
+result: we can load an app.
+result: display data.
+result: save data.
+result: reload the app.
+result: see the new data visible.
+
+
+

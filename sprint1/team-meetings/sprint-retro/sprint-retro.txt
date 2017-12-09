@@ -1,0 +1,19 @@
+Jack Daniel Kinne
+Billy Crossman
+Max Lemos
+Sam Alston
+
+
+10/11/17: online
+
+our idea generation was epic!  if anything, we created an unfeasable, torrent of features we could potentially implement.  we had some good disccusion about different frameworks, and are throwing caution to the wind to try new and interesting methods.  if meteor fails, we will be switching to DJango.
+
+
+
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos

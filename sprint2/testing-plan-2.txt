@@ -1,0 +1,16 @@
+testing plan:
+for this sprint, our goal is to have working views, models, and serializers in our django backend framework.  we should also have a UI that takes input.
+
+
+unit testing:
+
+condition: local host for Django has all methods listed as valid (post, get).
+condition: django shows models, views, serializers.
+condition: UI responds on all inputs.
+
+
+acceptance testing:
+
+condition: Django methods on the local host and clickable.
+condition: UI operates as needed.
+condition: setters and getters set and get new data to a user map.

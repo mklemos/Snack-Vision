@@ -1,0 +1,21 @@
+testing plan:
+for this sprint, our goal is we will be focusing on integration,
+- googles server
+- the UI able to access and set data.  
+- UI menu.  
+Focus is our demonstratable MVP.
+
+unit testing:
+
+condition: can post and get data from googles server.
+condition: Can read JSON object data.
+condition: UI menu has three buttons that trigger methods.
+
+
+acceptance testing:
+
+condition: Nodes are saved on our map and reformed and startup.
+condition: Nodes are saved on the server and can be posted to a user.
+condition: menu is fully navigatable without unexpected behavior.
+
+

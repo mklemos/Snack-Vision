@@ -1,0 +1,7 @@
+# we tried to get by using a voting system for many of our choices--which sometimes was slowed by our high level of split meetings (two or more members)
+
+# sometimes our pair programming was randomized, so we lost time retraining each member on many different aspects of the program. 
+
+# perhaps instead of having multiple hour meetings, we could have split them into smaller units over more periods.
+
+# our backend choices were ambitious and perhaps we overreached.

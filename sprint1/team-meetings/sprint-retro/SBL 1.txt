@@ -1,0 +1,23 @@
+
+
+as a developer, i want to have an app that integrates with google maps API that shows real time locations to build.
+priority: 1
+time estimate: twenty hours
+acceptance criteria: working display of geo location in an app
+
+
+as a user, i want to drop new pins on any source of food.
+priority: 2
+time estimate: ten hours
+acceptance criteria: pin is visible to all users.
+new pin must display name.
+must drop on my location.
+
+
+as a user, I'd like a dropdown list of fruit and vegatables to add pins.
+priority: 6
+time estimate: five hours
+acceptance criteria: dropdown list is visible
+list auto completes
+
+

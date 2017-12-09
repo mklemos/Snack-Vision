@@ -1,0 +1,20 @@
+Jack Daniel Kinne
+Billy Crossman
+Max Lemos
+Sam Alston
+
+
+12/3/14: online
+
+client: "almost there. If possible, and I know that we already talked about this, but it would be nice to have little to no work for the Oh Snap office to do for our organizers.  the more the app takes care of itself the more it would be useful for us.  Thanks!"
+
+this sprint we focused and were successful on integrating the peices of the project, that we had all been working on, into one big, happy family.  it took three meetings, but we got there. 
+
+stripped some features for our MVP.  reprioritized some things.  took out different user types for the client.   
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos

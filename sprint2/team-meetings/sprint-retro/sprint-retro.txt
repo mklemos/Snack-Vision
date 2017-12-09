@@ -1,0 +1,20 @@
+Jack Daniel Kinne
+Billy Crossman
+Max Lemos
+Sam Alston
+
+
+11/1/17: online
+
+so some things worked, and others failed us horribly.  and thats fine!  we decided as a team that we were abandoning meteor as our backend platform.  It's documentation was unacceptably subpar to Django's, and it was too new to the ecosphere for there to be established data we could use to make our FIRST project.  
+Django is now officially our backend.  All hail the hypnotoad.  
+
+
+
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos

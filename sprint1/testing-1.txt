@@ -1,0 +1,11 @@
+unit testing:
+
+result: successful compile
+result: calling FUNCTION_NAME_TEST returned true.
+
+
+
+acceptance testing:
+
+result: map loads on startup!
+fail: click on the map does not YET create pin.  pushed to sprint 2.

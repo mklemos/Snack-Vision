@@ -1,0 +1,19 @@
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos
+
+11-12-2017
+
+sprint three will last until : 12-3-2017
+
+we will be focusing on integration--we have many parts that all work.  we need to get them together, loaded on googles server, the UI able to access and set data.  we also need to clean up our UI and add a menu.  
+Focus is our demonstratable MVP.
+
+	
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos

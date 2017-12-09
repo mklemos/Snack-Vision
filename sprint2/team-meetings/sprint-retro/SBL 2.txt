@@ -1,0 +1,16 @@
+as an event organizer, i want to drop new pins on different locations from afar to decrease walking.
+priority: 7
+time estimate: ten hours
+acceptance criteria: pin drops on given location
+new pin must display name.
+visible to all.
+
+as a user, i'd like the map to be color coded to see last harvest viability (when did someone last vote on it.)
+priority: 6
+time estimate: three hours
+acceptance criteria: map now shows colors based on status.
+
+as a developer, i'd like to host my data on googles server to save this information for later.
+priority: 2
+time estimate: twenty hours
+acceptance criteria: we can make push/pull requests.

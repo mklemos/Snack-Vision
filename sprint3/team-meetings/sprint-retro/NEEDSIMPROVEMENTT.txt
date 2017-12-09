@@ -1,0 +1,7 @@
+# milestones could have been more clear in the team -- we stretched some aspects of the sprint in non-agile ways.
+
+# ending up prototyping some work --which meant that we created some unecessary replication of effort on django views and models.
+
+# we did not record one or two informal meetings.  ops!
+
+# our daily scrums are recording on the slack channel, but not in a way that can be translated to notes.  doh!

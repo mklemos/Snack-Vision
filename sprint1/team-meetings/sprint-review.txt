@@ -1,0 +1,19 @@
+Jack Daniel Kinne
+Billy Crossman
+Max Lemos
+Sam Alston
+
+
+10/13/14: online
+
+client: "thumbs up. Let's see less need for admin's and less work for me!"
+
+this sprint we focused on and accomplished making a map visible with android studio in a phone application-- with visible, clickable pins on said map.
+
+
+"The information in this report is accurate, to the best of my knowledge"
+
+Bill Crossman
+Jack Kinne
+Sam Alston
+Max Lemos

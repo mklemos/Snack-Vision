@@ -1,0 +1,7 @@
+# length of meetings could be longer
+
+# our documentation in code could be more descriptive
+
+# coding standards need to be implemented before and not after we write code!
+
+# communication was moved to slack for better integration between channels (general, research, et cetera.)

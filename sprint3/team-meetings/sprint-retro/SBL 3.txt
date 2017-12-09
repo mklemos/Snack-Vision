@@ -1,0 +1,48 @@
+
+as an event organizer, i would like to be able to set a duration for my event, to limit visits after the fact.
+priority: 4
+time estimate: three hours.
+acceptance criteria: pin must die at duration expiration. 
+duration is visible and counts down.
+
+
+
+as a user, i would like to recieve push notifications near me so that i can find food easy.
+priority: 3
+time estimate: seven hours.
+acceptance criteria: push notifications must exist
+must be  visible to all nearby users.
+push notifications must not be visible to alaska.
+
+
+
+
+
+as a user, i want to downvote (and eventually delete) pins to delete sources of food that no longer are active.
+priority: 5
+time estimate: thirty hours.
+acceptance criteria: vote option is displayed.
+events start with user upvote.  events end with x downvotes.
+votes are visible as int.
+
+
+
+as a student, i want to see a vote for quality of food to more accurately gauge interest.
+priority: 8
+time estimate: twenty five hours.
+acceptance criteria: quality vote option displayed
+events start with user quality upvote.  events persist with quality downvote.
+quality votes are visible as int.
+
+
+as a user, i want an account that levels up based on pins and votes to show my karma and street cred.
+priority: 8
+time estimate: twenty hours.
+acceptance criteria: shows level.  shows experience towards next.
+experience increases on vote mildly, increases being voted upon middly, and increases with a new pin heavily.
+
+
+as a organization, i want to have a ranking to show prestiege and local renown to compete against other organizations or guilds.
+priority: 9
+time estimate: thirty hours.
+acceptance criteria: shows ranking.  shows expereince towards next.  shows organization.  ranking is dependent against leader board (curve).

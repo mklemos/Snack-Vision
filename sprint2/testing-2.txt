@@ -1,0 +1,13 @@
+unit testing:
+
+
+result: local host for Django has all methods listed as valid.
+result: model.py shows all listed nodes.
+result: UI is clickable, and you can move around the map.
+
+
+acceptance testing:
+
+result: local host for dJango successfully loads, all methods visible, data can be seen in the model.
+result: UI is responsive without unexpected behavior.
+FAIL: setters and getters can sometimes get lost if there are more than one of them in a short amount of time.

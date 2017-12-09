@@ -1,0 +1,7 @@
+# some really amazing features that we wanted on the project could not be implemented.
+
+# some work that we did on those features will not be included in the final project
+
+# could not get a third round of input from our client (due to schedule conflicts)
+
+# due to some UI breakage, we had to restore our filebase from a previous version.

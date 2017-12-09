@@ -1,0 +1,7 @@
+# deprioritized and CUT features from our MVP in order to meet a minimum viable product
+
+# came together and spent Good, quality amount of time working on the sprint
+
+# made leaps and bounds of effort on our backend support.  we can push and pull from our server!
+
+# UI went through a major overhaul in a big way that makes interacting with the map easier and more pretty.
